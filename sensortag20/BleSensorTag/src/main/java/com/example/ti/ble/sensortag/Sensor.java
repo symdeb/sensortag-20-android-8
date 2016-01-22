@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       Sensor.java
-  Revised:        $Date: 2013-08-30 11:44:31 +0200 (fr, 30 aug 2013) $
-  Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 
@@ -210,7 +208,14 @@ public enum Sensor {
 			return new Point3D((-6f) + 125f * (a / 65535f), 0, 0);
 		}
 	},
+	HUMIDITY2(UUID_HUM_SERV, UUID_HUM_DATA, UUID_HUM_CONF) {
+		@Override
+		public Point3D convert(final byte[] value) {
+			int a = shortUnsignedAtOffset(value, 2);
 
+			return new Point3D(100f * (a / 65535f), 0, 0);
+		}
+	},
 	MAGNETOMETER(UUID_MAG_SERV, UUID_MAG_DATA, UUID_MAG_CONF) {
 		@Override
 		public Point3D convert(final byte [] value) {

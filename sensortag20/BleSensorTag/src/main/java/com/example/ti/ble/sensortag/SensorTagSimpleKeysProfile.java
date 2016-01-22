@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagSimpleKeysProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 

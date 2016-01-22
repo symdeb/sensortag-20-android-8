@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       DeviceActivity.java
-  Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
-  Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 
@@ -94,14 +92,17 @@ import android.widget.Toast;
 
 
 import com.example.ti.ble.btsig.profiles.DeviceInformationServiceProfile;
+import com.example.ti.ble.common.BluetoothGATTDefines;
 import com.example.ti.ble.common.BluetoothLeService;
 import com.example.ti.ble.common.GattInfo;
 import com.example.ti.ble.common.GenericBluetoothProfile;
+import com.example.ti.ble.common.HCIDefines;
 import com.example.ti.ble.common.HelpView;
 import com.example.ti.ble.sensortag.R;
+import com.example.ti.ble.ti.profiles.TILampControlProfile;
 import com.example.ti.ble.ti.profiles.TIOADProfile;
 import com.example.ti.ble.common.IBMIoTCloudProfile;
-
+import com.example.ti.util.PreferenceWR;
 
 
 @SuppressLint("InflateParams") public class DeviceActivity extends ViewPagerActivity {
@@ -127,6 +128,7 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
 	// SensorTagGatt
 	private BluetoothGattService mOadService = null;
 	private BluetoothGattService mConnControlService = null;
+    private BluetoothGattService mTestService = null;
 	private boolean mIsSensorTag2;
 	private String mFwRev;
 	public ProgressDialog progressDialog;
@@ -289,13 +291,34 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
 
 		// Create GATT object
 		mBtGatt = BluetoothLeService.getBtGatt();
-		// Start service discovery
-		if (!mServicesRdy && mBtGatt != null) {
-			if (mBtLeService.getNumServices() == 0)
-				discoverServices();
-			else {
-			}
-		}
+
+        PreferenceWR p = new PreferenceWR(mBluetoothDevice.getAddress(),this);
+        if (p.getBooleanPreference(PreferenceWR.PREFERENCEWR_NEEDS_REFRESH) == true) {
+            Log.d("DeviceActivity", "Need to refresh device cache, calling refreshDeviceCache()");
+            progressDialog.setTitle("Refreshing device cache ");
+            boolean refresh = this.mBtLeService.refreshDeviceCache(this.mBtGatt);
+            //We need a wait here, because this takes time ...
+            if (refresh == true) {
+                if (!mServicesRdy && mBtGatt != null) {
+                    if (mBtLeService.getNumServices() == 0) {
+                        progressDialog.setTitle("Refreshing device cache ");
+                        discoverServices();
+                    }
+                    else {
+                    }
+                }
+            }
+            p.setBooleanPreference(PreferenceWR.PREFERENCEWR_NEEDS_REFRESH,false);
+        }
+        else {
+            // Start service discovery
+            if (!mServicesRdy && mBtGatt != null) {
+                if (mBtLeService.getNumServices() == 0)
+                    discoverServices();
+                else {
+                }
+            }
+        }
 	}
 
 	boolean isSensorTag2() {
@@ -312,6 +335,9 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
 	BluetoothGattService getConnControlService() {
 		return mConnControlService;
 	}
+    BluetoothGattService getTestService() {
+        return mTestService;
+    }
 
 	private void startPreferenceActivity() {
 		// Launch preferences
@@ -572,6 +598,19 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
                                     Log.d("DeviceActivity","Found Motion !");
 
                                 }
+                                if (SensorTagDisplayProfile.isCorrectService(s)) {
+                                    SensorTagDisplayProfile d = new SensorTagDisplayProfile(context,mBluetoothDevice,s,mBtLeService);
+                                    mProfiles.add(d);
+                                    d.configureService();
+                                    Log.d("DeviceActivity","Found Display Control Service");
+                                }
+                                if (TILampControlProfile.isCorrectService(s)) {
+                                    TILampControlProfile lamp = new TILampControlProfile(context,mBluetoothDevice,s,mBtLeService);
+                                    mProfiles.add(lamp);
+                                    lamp.configureService();
+                                    Log.d("DeviceActivity","Found Lamp Control Service");
+                                }
+
                                 if (DeviceInformationServiceProfile.isCorrectService(s)) {
                                     DeviceInformationServiceProfile devInfo = new DeviceInformationServiceProfile(context,mBluetoothDevice,s,mBtLeService);
                                     mProfiles.add(devInfo);
@@ -584,6 +623,9 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
                                     oad.configureService();
                                     mOadService = s;
                                     Log.d("DeviceActivity","Found TI OAD Service");
+                                }
+                                if (SensorTagTestProfile.isCorrectService(s)) {
+                                    mTestService = s;
                                 }
                                 if ((s.getUuid().toString().compareTo("f000ccc0-0451-4000-b000-000000000000")) == 0) {
                                     mConnControlService = s;
@@ -689,7 +731,13 @@ import com.example.ti.ble.common.IBMIoTCloudProfile;
                 }
             }
 			if (status != BluetoothGatt.GATT_SUCCESS) {
-				setError("GATT error code: " + status);
+				try {
+					Log.d("DeviceActivity", "Failed UUID was " + intent.getStringExtra(BluetoothLeService.EXTRA_UUID));
+					setError("GATT error code: " + BluetoothGATTDefines.gattErrorCodeStrings.get(status));
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	};

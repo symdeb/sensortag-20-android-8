@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       BluetoothLeService.java
-  Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
-  Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 
@@ -76,6 +74,8 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.example.ti.util.PreferenceWR;
+
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -106,6 +106,7 @@ public class BluetoothLeService extends Service {
 	private BluetoothGatt mBluetoothGatt = null;
 	private static BluetoothLeService mThis = null;
 	private String mBluetoothDeviceAddress;
+    private PreferenceWR mDevicePrefs = null;
 
 	public Timer disconnectionTimer;
     private final Lock lock = new ReentrantLock();
@@ -170,7 +171,6 @@ public class BluetoothLeService extends Service {
 			try {
 				switch (newState) {
 				case BluetoothProfile.STATE_CONNECTED:
-                    //refreshDeviceCache(mBluetoothGatt);
 					broadcastUpdate(ACTION_GATT_CONNECTED, address, status);
 					break;
 				case BluetoothProfile.STATE_DISCONNECTED:
@@ -587,8 +587,9 @@ public class BluetoothLeService extends Service {
 			return false;
 		}
 		final BluetoothDevice device = mBtAdapter.getRemoteDevice(address);
+        this.mDevicePrefs = new PreferenceWR(device.getAddress(),this.getApplicationContext());
 		int connectionState = mBluetoothManager.getConnectionState(device,
-		    BluetoothProfile.GATT);
+                BluetoothProfile.GATT);
 
 		if (connectionState == BluetoothProfile.STATE_DISCONNECTED) {
 
@@ -944,5 +945,8 @@ public class BluetoothLeService extends Service {
             }
         }
         return -3; // Set notification to android was wrong ...
+    }
+    public String getConnectedDeviceAddress() {
+        return this.mBluetoothDeviceAddress;
     }
 }

@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       CloudProfileConfigurationDialogFragment.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -77,6 +75,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ti.ble.sensortag.R;
+import com.example.ti.util.PreferenceWR;
 
 import java.util.Map;
 
@@ -116,11 +115,9 @@ public class CloudProfileConfigurationDialogFragment extends DialogFragment impl
 
     SharedPreferences prefs = null;
 
-    public CloudProfileConfigurationDialogFragment(String devId) {
-        deviceId = devId;
-    }
     public static CloudProfileConfigurationDialogFragment newInstance(String devId) {
-        CloudProfileConfigurationDialogFragment frag = new CloudProfileConfigurationDialogFragment(devId);
+        CloudProfileConfigurationDialogFragment frag = new CloudProfileConfigurationDialogFragment();
+        frag.deviceId = devId;
         Bundle args = new Bundle();
         return frag;
     }
@@ -400,16 +397,21 @@ public class CloudProfileConfigurationDialogFragment extends DialogFragment impl
     public static String retrieveCloudPref(String prefName,Context con) {
             String preferenceKeyString = "pref_cloud_config_"
                     + prefName;
-
+            /*
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(con);
 
             String defaultValue = "NS";
             return prefs.getString(preferenceKeyString, defaultValue);
+            */
+        BluetoothLeService mBTLE = BluetoothLeService.getInstance();
+        PreferenceWR p = new PreferenceWR(mBTLE.getConnectedDeviceAddress(),con);
+        return p.getStringPreference(preferenceKeyString);
     }
     public static boolean setCloudPref(String prefName, String prefValue, Context con) {
         String preferenceKeyString = "pref_cloud_config_"
                 + prefName;
 
+        /*
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(con);
 
         String defaultValue = "NS";
@@ -417,6 +419,10 @@ public class CloudProfileConfigurationDialogFragment extends DialogFragment impl
         SharedPreferences.Editor ed = prefs.edit();
         ed.putString(preferenceKeyString, prefValue);
         return ed.commit();
+        */
+        BluetoothLeService mBTLE = BluetoothLeService.getInstance();
+        PreferenceWR p = new PreferenceWR(mBTLE.getConnectedDeviceAddress(),con);
+        return p.setStringPreference(preferenceKeyString,prefValue);
     }
 
 }

@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagMovementProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -63,7 +61,9 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.content.Context;
+import android.text.Html;
 import android.util.Log;
+import android.widget.CompoundButton;
 
 import com.example.ti.ble.common.BluetoothLeService;
 import com.example.ti.ble.common.GattInfo;
@@ -100,6 +100,21 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 		
 		row.gyroValue.setText("X:0.00'/s, Y:0.00'/s, Z:0.00'/s");
 		row.magValue.setText("X:0.00mT, Y:0.00mT, Z:0.00mT");
+        row.WOS.setChecked(true);
+        row.WOS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                byte b[] = new byte[] {0x7F,0x00};
+                if (isChecked) {
+                    b[0] = (byte)0xFF;
+                }
+                int error = mBTLeService.writeCharacteristic(configC, b);
+                if (error != 0) {
+                    if (configC != null)
+                        Log.d("SensorTagMovementProfile","Sensor config failed: " + configC.getUuid().toString() + " Error: " + error);
+                }
+            }
+        });
 		this.tRow.periodBar.setProgress(100);
 	}
 	
@@ -111,7 +126,10 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 	}
 	@Override 
 	public void enableService() {
-        int error = mBTLeService.writeCharacteristic(this.configC, new byte[] {0x7F,0x02});
+        byte b[] = new byte[] {0x7F,0x00};
+        SensorTagMovementTableRow row = (SensorTagMovementTableRow)this.tRow;
+        if (row.WOS.isChecked()) b[0] = (byte)0xFF;
+        int error = mBTLeService.writeCharacteristic(this.configC, b);
         if (error != 0) {
             if (this.configC != null)
             Log.d("SensorTagMovementProfile","Sensor config failed: " + this.configC.getUuid().toString() + " Error: " + error);
@@ -151,18 +169,18 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 			if (c.equals(this.dataC)){
 				Point3D v;
 				v = Sensor.MOVEMENT_ACC.convert(value);
-				if (this.tRow.config == false) this.tRow.value.setText(String.format("X:%.2fG, Y:%.2fG, Z:%.2fG", v.x,v.y,v.z));
+				if (this.tRow.config == false) this.tRow.value.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2fG</font>, <font color=#00967D>Y:%.2fG</font>, <font color=#00000>Z:%.2fG</font>", v.x, v.y, v.z)));
 				this.tRow.sl1.addValue((float)v.x);
 				this.tRow.sl2.addValue((float)v.y);
 				this.tRow.sl3.addValue((float)v.z);
 				v = Sensor.MOVEMENT_GYRO.convert(value);
 				SensorTagMovementTableRow row = (SensorTagMovementTableRow)this.tRow;
-				row.gyroValue.setText(String.format("X:%.2f'/s, Y:%.2f'/s, Z:%.2f'/s", v.x,v.y,v.z));
+				row.gyroValue.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2f°/s</font>, <font color=#00967D>Y:%.2f°/s</font>, <font color=#00000>Z:%.2f°/s</font>", v.x, v.y, v.z)));
 				row.sl4.addValue((float)v.x);
 				row.sl5.addValue((float)v.y);
 				row.sl6.addValue((float)v.z);
 				v = Sensor.MOVEMENT_MAG.convert(value);
-				row.magValue.setText(String.format("X:%.2fuT, Y:%.2fuT, Z:%.2fuT", v.x,v.y,v.z));
+				row.magValue.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2fuT</font>, <font color=#00967D>Y:%.2fuT</font>, <font color=#00000>Z:%.2fuT</font>", v.x, v.y, v.z)));
 				row.sl7.addValue((float)v.x);
 				row.sl8.addValue((float)v.y);
 				row.sl9.addValue((float)v.z);

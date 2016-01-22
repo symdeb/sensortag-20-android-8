@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagApplicationClass.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -105,6 +103,7 @@ public class SensorTagApplicationClass extends Application{
         if (mBtAdapter == null) {
             Toast.makeText(this, R.string.bt_not_supported, Toast.LENGTH_LONG).show();
             mBleSupported = false;
+            return;
         }
 
         mFilter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);

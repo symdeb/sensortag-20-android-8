@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       FwUpdateActivity_CC26xx.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -63,6 +61,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -75,16 +74,27 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ti.ble.common.BluetoothLeService;
+import com.example.ti.ble.common.CloudProfileConfigurationDialogFragment;
 import com.example.ti.util.Conversion;
+import com.example.ti.util.PreferenceWR;
+import com.example.ti.util.firmwareEntriesParser;
+import com.example.ti.util.tiFirmwareEntry;
+import com.example.ti.ble.sensortag.fwSelectorView;
+import com.example.ti.util.firmwareEntryTableRow;
+
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringWriter;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -130,11 +140,13 @@ public class FwUpdateActivity_CC26xx extends Activity {
     // BLE
     private BluetoothGattService mOadService;
     private BluetoothGattService mConnControlService;
+    private BluetoothGattService mTestService;
     private List<BluetoothGattCharacteristic> mCharListOad;
     private List<BluetoothGattCharacteristic> mCharListCc;
     private BluetoothGattCharacteristic mCharIdentify = null;
     private BluetoothGattCharacteristic mCharBlock = null;
     private BluetoothGattCharacteristic mCharConnReq = null;
+    private BluetoothGattCharacteristic mTestResult = null;
     private DeviceActivity mDeviceActivity = null;
     private BluetoothLeService mLeService;
 
@@ -155,11 +167,15 @@ public class FwUpdateActivity_CC26xx extends Activity {
     // Housekeeping
     private boolean mServiceOk = false;
     private boolean mProgramming = false;
+    private boolean mTestOK = false;
     private IntentFilter mIntentFilter;
 
+    private List<tiFirmwareEntry> fwEntries;
+    private AlertDialog.Builder testFailedAlertDialog;
 
     public FwUpdateActivity_CC26xx() {
         mDeviceActivity = DeviceActivity.getInstance();
+
 
         // BLE Gatt Service
         mLeService = BluetoothLeService.getInstance();
@@ -167,10 +183,20 @@ public class FwUpdateActivity_CC26xx extends Activity {
         // Service information
         mOadService = mDeviceActivity.getOadService();
         mConnControlService = mDeviceActivity.getConnControlService();
+        mTestService = mDeviceActivity.getTestService();
 
         // Characteristics list
         mCharListOad = mOadService.getCharacteristics();
         mCharListCc = mConnControlService.getCharacteristics();
+
+        if (mTestService != null) {
+            for (BluetoothGattCharacteristic b : mTestService.getCharacteristics()) {
+                if ((b.getUuid().toString().compareTo(SensorTagGatt.UUID_TST_DATA.toString())) == 0)  {
+                    mTestResult = b;
+                }
+            }
+        }
+
 
         mServiceOk = mCharListOad.size() == 2 && mCharListCc.size() >= 3;
         if (mServiceOk) {
@@ -179,26 +205,37 @@ public class FwUpdateActivity_CC26xx extends Activity {
             mCharBlock.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
             mCharConnReq = mCharListCc.get(1);
         }
-        String fwString = mDeviceActivity.firmwareRevision();
-        String revNum = fwString.substring(0,fwString.indexOf(" "));
-        firmwareRevision = Float.parseFloat(revNum);
-        if (firmwareRevision < 0.91) {
-            internalFWFilename = FW_FILE_0_91;
-            slowAlgo = true;
+        try {
+            String fwString = mDeviceActivity.firmwareRevision();
+            String revNum = fwString.substring(0, fwString.indexOf(" "));
+            firmwareRevision = Float.parseFloat(revNum);
+            if (firmwareRevision < 0.91) {
+                internalFWFilename = FW_FILE_0_91;
+                slowAlgo = true;
+            } else if (firmwareRevision < 1.00) {
+                internalFWFilename = FW_FILE_1_01;
+                slowAlgo = true;
+            } else {
+                internalFWFilename = FW_FILE_1_01;
+                slowAlgo = true;
+            }
         }
-        else if (firmwareRevision < 1.00) {
-            internalFWFilename = FW_FILE_1_01;
-            slowAlgo = true;
-        }
-        else {
-            internalFWFilename = FW_FILE_1_01;
-            slowAlgo = true;
+        catch (Exception e) {
+            e.printStackTrace();
+            //TODO
         }
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
+        firmwareEntriesParser parser = new firmwareEntriesParser();
+        try {
+            fwEntries = parser.parse(getAssets().open("firmware_list.xml"));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fwupdate);
@@ -230,10 +267,12 @@ public class FwUpdateActivity_CC26xx extends Activity {
 
         // CC26xx setup is different than CC254x
         mBtnLoadB.setVisibility(View.INVISIBLE);
-        mBtnLoadA.setText("Factory");
+        mBtnLoadA.setText("Stock Images");
         initIntentFilter();
         mTargImage.setText(mDeviceActivity.firmwareRevision());
-        mFileImage.setText("1.01 (Mar 13 2015)");
+        TextView t = (TextView) findViewById(R.id.fw_activity_update_img);
+        if (t != null) t.setText("");
+        mFileImage.setText("");
 
         if (firmwareRevision < 0.91) {
             mFileImage.setText("0.91 (Feb 13 2015)");
@@ -247,6 +286,12 @@ public class FwUpdateActivity_CC26xx extends Activity {
             AlertDialog d = b.create();
             d.show();
 
+        }
+
+        if (mTestService == null) {
+            //Test service is missing, so we cannot check, print a warning in the text field.
+            mLog.append(Html.fromHtml(String.format("<font color=#CC0000>No test service on current device, cannot check if external flash is working !</font>")));
+            mTestOK = true;
         }
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -296,6 +341,13 @@ public class FwUpdateActivity_CC26xx extends Activity {
         } else {
             Toast.makeText(this, "OAD service initialisation failed", Toast.LENGTH_LONG).show();
         }
+        // Read test result to check if external flash is ok
+        if (mTestResult != null) {
+            if (mLeService.readCharacteristic(mTestResult) == 0) {
+                Log.d("FWUpdateActivity","Read test result sucessfully");
+            }
+            else Log.d("FWUpdateActivity","Read test result failed !");
+        }
         mLeService.abortTimedDisconnect();
     }
 
@@ -321,7 +373,7 @@ public class FwUpdateActivity_CC26xx extends Activity {
                 if (uuidStr.equals(mCharBlock.getUuid().toString())) {
                     // Block check here :
                     String block = String.format("%02x%02x",value[1],value[0]);
-                    Log.d("FwUpdateActivity_CC26xx :", "Received block req: " + block);
+                    //Log.d("FwUpdateActivity_CC26xx :", "Received block req: " + block);
                     if (slowAlgo == true) {
                         programBlock();
                     }
@@ -335,10 +387,52 @@ public class FwUpdateActivity_CC26xx extends Activity {
                     }
                 }
 
-            } else if (BluetoothLeService.ACTION_DATA_WRITE.equals(action)) {
+            }
+            else if (BluetoothLeService.ACTION_DATA_WRITE.equals(action)) {
                 int status = intent.getIntExtra(BluetoothLeService.EXTRA_STATUS,BluetoothGatt.GATT_SUCCESS);
                 if (status != BluetoothGatt.GATT_SUCCESS) {
                     Toast.makeText(context, "GATT error: status=" + status, Toast.LENGTH_SHORT).show();
+                }
+            }
+            else if (BluetoothLeService.ACTION_DATA_READ.equals(action)) {
+                byte [] value = intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA);
+                String uuidStr = intent.getStringExtra(BluetoothLeService.EXTRA_UUID);
+                if (uuidStr.toString().compareTo(SensorTagGatt.UUID_TST_DATA.toString()) == 0) {
+                    // Test result data received, check data
+                    if (value.length > 0) {
+                        Log.d("FWUpdateActivity_CC26xx", "Read from " + uuidStr + " data =" + value[0]);
+                        if ((value[0] & 0x40) == 0x40) {
+                            mLog.append(Html.fromHtml(String.format("<font color=#00CC00>FLASH Self test passed !</font>")));
+                            mTestOK = true;
+                        }
+                        else {
+                            mLog.append(Html.fromHtml(String.format("<font color=#CC0000>FLASH Self test failed !</font>")));
+                            mTestOK = false;
+                        }
+                    }
+                }
+
+            }
+            else if (fwSelectorView.ACTION_FW_WAS_SELECTED.equals(action)) {
+                int position = intent.getIntExtra(fwSelectorView.EXTRA_SELECTED_FW_INDEX, -1);
+                if (position < fwEntries.size()) {
+                    tiFirmwareEntry ent = fwEntries.get(position);
+                    if (!ent.compatible) {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setPositiveButton("OK",null);
+                        builder.setTitle("Warning !");
+                        builder.setMessage("Selected image is not compatible with your current firmware, you should not update with this image !");
+                        (builder.create()).show();
+                    }
+                    loadFile(ent.Filename, true);
+                    updateGui();
+                }
+                else {
+                    AlertDialog.Builder b = new AlertDialog.Builder(getParent());
+                    b.setTitle("Error");
+                    b.setMessage("The selected image was out of index, cannot load ...");
+                    b.setNegativeButton("OK", null);
+                    (b.create()).show();
                 }
             }
         }
@@ -348,7 +442,9 @@ public class FwUpdateActivity_CC26xx extends Activity {
     private void initIntentFilter() {
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(BluetoothLeService.ACTION_DATA_NOTIFY);
+        mIntentFilter.addAction(BluetoothLeService.ACTION_DATA_READ);
         mIntentFilter.addAction(BluetoothLeService.ACTION_DATA_WRITE);
+        mIntentFilter.addAction(fwSelectorView.ACTION_FW_WAS_SELECTED);
     }
 
     public void onStart(View v) {
@@ -360,11 +456,33 @@ public class FwUpdateActivity_CC26xx extends Activity {
     }
 
     public void onLoad(View v) {
+        if (mTestOK != true) {
+            testFailedAlertDialog = new AlertDialog.Builder(this);
+            testFailedAlertDialog.setTitle("Error");
+            testFailedAlertDialog.setMessage("External FLASH self test failed, cannot do OAD on this device, If the device is connected to a debugger remove debugger, remove and insert battery.");
+            testFailedAlertDialog.setNegativeButton("OK", null);
+            (testFailedAlertDialog.create()).show();
+            return;
+        }
+
         mLeService.setCharacteristicNotification(mCharBlock, true);
         if ( Build.VERSION.SDK_INT >= 21) Log.d("FWUpdateActivity_CC26xx","Requested connection priority HIGH, result : " + this.mLeService.requestConnectionPriority(BluetoothGatt.CONNECTION_PRIORITY_HIGH));
         setConnectionParameters();
+
+
+
+
+        fwSelectorView dF = fwSelectorView.newInstance(fwEntries,this.firmwareRevision);
+
+        final Activity act = (Activity)this;
+        dF.show(act.getFragmentManager(),"CloudConfig");
+
+
+
+        /*
         loadFile(internalFWFilename, true);
         updateGui();
+        */
     }
 
     public void onLoadCustom(View v) {
@@ -425,7 +543,7 @@ public class FwUpdateActivity_CC26xx extends Activity {
 
     private boolean loadFile(String filepath, boolean isAsset) {
         boolean fSuccess = false;
-
+        int readLen = 0;
         // Load binary file
         try {
             // Read the file raw into a buffer
@@ -436,7 +554,7 @@ public class FwUpdateActivity_CC26xx extends Activity {
                 File f = new File(filepath);
                 stream = new FileInputStream(f);
             }
-            stream.read(mFileBuffer, 0, mFileBuffer.length);
+            readLen = stream.read(mFileBuffer, 0, mFileBuffer.length);
             stream.close();
         } catch (IOException e) {
             // Handle exceptions here
@@ -451,13 +569,14 @@ public class FwUpdateActivity_CC26xx extends Activity {
         //Always enable button on CC26xx
         mBtnStart.setEnabled(true);
 
-        mFileImgHdr = new ImgHdr(mFileBuffer);
+        mFileImgHdr = new ImgHdr(mFileBuffer,readLen);
 
         // Expected duration
         displayStats();
 
         // Log
-        mLog.setText("Programming Image " + internalFWFilename + "\n");
+        mLog.setText("Programming image : " + filepath + "\n");
+        mLog.append("File size : " + readLen + " bytes (" + (readLen / 16) + ") blocks\n");
         mLog.append("Ready to program device!\n");
 
         updateGui();
@@ -486,7 +605,7 @@ public class FwUpdateActivity_CC26xx extends Activity {
 
     private void setConnectionParameters() {
         // Make sure connection interval is long enough for OAD (Android default connection interval is 7.5 ms)
-        byte[] value = { Conversion.loUint16(OAD_CONN_INTERVAL), Conversion.hiUint16(OAD_CONN_INTERVAL), Conversion.loUint16(OAD_CONN_INTERVAL),
+        byte[] value = {Conversion.loUint16(OAD_CONN_INTERVAL), Conversion.hiUint16(OAD_CONN_INTERVAL), Conversion.loUint16(OAD_CONN_INTERVAL),
                 Conversion.hiUint16(OAD_CONN_INTERVAL), 0, 0, Conversion.loUint16(OAD_SUPERVISION_TIMEOUT), Conversion.hiUint16(OAD_SUPERVISION_TIMEOUT) };
         mCharConnReq.setValue(value);
         mLeService.writeCharacteristic(mCharConnReq);
@@ -528,7 +647,7 @@ public class FwUpdateActivity_CC26xx extends Activity {
             // Send block
             mCharBlock.setValue(mOadBuffer);
             boolean success = mLeService.writeCharacteristicNonBlock(mCharBlock);
-            Log.d("FwUpdateActivity_CC26xx","Sent block :" + mProgInfo.iBlocks);
+            //Log.d("FwUpdateActivity_CC26xx","Sent block :" + mProgInfo.iBlocks);
             if (success) {
                 // Update stats
                 packetsSent++;
@@ -536,6 +655,10 @@ public class FwUpdateActivity_CC26xx extends Activity {
                 mProgInfo.iBytes += OAD_BLOCK_SIZE;
                 mProgressBar.setProgress((mProgInfo.iBlocks * 100) / mProgInfo.nBlocks);
                 if (mProgInfo.iBlocks == mProgInfo.nBlocks) {
+                    //Set preference to reload device cache when reconnecting later.
+                    PreferenceWR p = new PreferenceWR(mLeService.getConnectedDeviceAddress(),mDeviceActivity);
+                    p.setBooleanPreference(PreferenceWR.PREFERENCEWR_NEEDS_REFRESH,true);
+
                     AlertDialog.Builder b = new AlertDialog.Builder(this);
 
                     b.setMessage(R.string.oad_dialog_programming_finished);
@@ -544,6 +667,8 @@ public class FwUpdateActivity_CC26xx extends Activity {
 
                     AlertDialog d = b.create();
                     d.show();
+                    mProgramming = false;
+                    mLog.append("Programming finished at block " + (mProgInfo.iBlocks + 1) + "\n");
                 }
             } else {
                 mProgramming = false;
@@ -590,14 +715,20 @@ public class FwUpdateActivity_CC26xx extends Activity {
         short addr;
         byte imgType;
 
-        ImgHdr(byte[] buf) {
-            this.len = ((32 * 0x1000) / (16 / 4));
+        ImgHdr(byte[] buf, int fileLen) {
+            this.len = (fileLen / (16 / 4));
             this.ver = 0;
             this.uid[0] = this.uid[1] = this.uid[2] = this.uid[3] = 'E';
             this.addr = 0;
             this.imgType = 1; //EFL_OAD_IMG_TYPE_APP
             this.crc0 = calcImageCRC((int)0,buf);
             crc1 = (short)0xFFFF;
+            Log.d("FwUpdateActivity_CC26xx","ImgHdr.len = " + this.len);
+            Log.d("FwUpdateActivity_CC26xx","ImgHdr.ver = " + this.ver);
+            Log.d("FwUpdateActivity_CC26xx",String.format("ImgHdr.uid = %02x%02x%02x%02x",this.uid[0],this.uid[1],this.uid[2],this.uid[3]));
+            Log.d("FwUpdateActivity_CC26xx","ImgHdr.addr = " + this.addr);
+            Log.d("FwUpdateActivity_CC26xx","ImgHdr.imgType = " + this.imgType);
+            Log.d("FwUpdateActivity_CC26xx",String.format("ImgHdr.crc0 = %04x",this.crc0));
         }
 
         byte[] getRequest() {

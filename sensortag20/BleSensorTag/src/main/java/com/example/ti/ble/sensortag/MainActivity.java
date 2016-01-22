@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       MainActivity.java
-  Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
-  Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 
@@ -60,6 +58,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -67,6 +66,7 @@ import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
@@ -138,6 +138,26 @@ public class MainActivity extends ViewPagerActivity {
 		// Start the application
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 		super.onCreate(savedInstanceState);
+
+
+		// Check for Bluetooth support, if not exit application.
+		mBtAdapter = BluetoothAdapter.getDefaultAdapter();
+		if (mBtAdapter == null) {
+			AlertDialog.Builder aB = new AlertDialog.Builder(this);
+			aB.setTitle("Error !");
+			aB.setMessage("This Android device does not have Bluetooth or there is an error in the " +
+					"bluetooth setup. Application cannot start, will exit.");
+			aB.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					System.exit(0);
+				}
+			});
+			AlertDialog a = aB.create();
+			a.show();
+			return;
+		}
+
 
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -259,6 +279,10 @@ public class MainActivity extends ViewPagerActivity {
             mBluetoothLeService = BluetoothLeService.getInstance();
             mBluetoothManager = mBluetoothLeService.getBtManager();
             mBtAdapter = mBluetoothManager.getAdapter();
+			if (mBtAdapter == null) {
+				Toast.makeText(this, R.string.bt_not_supported, Toast.LENGTH_LONG).show();
+				return;
+			}
 			registerReceiver(mReceiver, mFilter);
 			mBtAdapterEnabled = mBtAdapter.isEnabled();
 			if (mBtAdapterEnabled) {

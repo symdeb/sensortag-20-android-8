@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       IBMIoTCloudProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -55,6 +53,7 @@
 package com.example.ti.ble.common;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
@@ -64,6 +63,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.PowerManager.WakeLock;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -84,15 +84,6 @@ import java.util.Properties;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/*
-#define START_STRING @"{\n \"d\":{\n"
-#define VARIABLE_STRING(a,b) [NSString stringWithFormat:@"\"%@\":\"%@\"",a,b]
-#define STOP_STRING @"\n}\n}"
-*/
-
-/**
- * Created by ole on 07/04/15.
- */
 public class IBMIoTCloudProfile extends GenericBluetoothProfile {
     final String startString = "{\n \"d\":{\n";
     final String stopString = "\n}\n}";
@@ -114,13 +105,7 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
 
         config = readCloudConfigFromPrefs();
 
-        if (config != null) {
-            Log.d("IBMIoTCloudProfile", "Stored cloud configuration" + "\r\n" + config.toString());
-        }
-        else {
-            config = initPrefsWithIBMQuickStart();
-            Log.d("IBMIoTCloudProfile", "Stored cloud configuration was corrupt, starting new based on IBM IoT Quickstart variables" + config.toString());
-        }
+
 
         String addr = mBTDevice.getAddress();
         String[] addrSplit = addr.split(":");
@@ -130,6 +115,16 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
         }
         ready = false;
         this.addrShort = String.format("%02x%02x%02x%02x%02x%02x",addrBytes[0],addrBytes[1],addrBytes[2],addrBytes[3],addrBytes[4],addrBytes[5]);
+
+        if (config != null) {
+            Log.d("IBMIoTCloudProfile", "Stored cloud configuration" + "\r\n" + config.toString());
+        }
+        else {
+            config = initPrefsWithIBMQuickStart();
+            Log.d("IBMIoTCloudProfile", "Stored cloud configuration was corrupt, starting new based on IBM IoT Quickstart variables" + config.toString());
+        }
+
+
         Log.d("IBMIoTCloudProfile", "Device ID : " + addrShort);
         this.tRow.sl1.setVisibility(View.INVISIBLE);
         this.tRow.sl2.setVisibility(View.INVISIBLE);
@@ -192,11 +187,18 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
             public void onReceive(Context context, Intent intent) {
                 if (intent.getAction().equals(CloudProfileConfigurationDialogFragment.ACTION_CLOUD_CONFIG_WAS_UPDATED)) {
                     Log.d("IBMIoTCloudProfile","Cloud configuration was updated !");
+                    Log.d("IBMIoTCloudProfile", "Old cloud configuration was :" + config.toString());
+                    config = readCloudConfigFromPrefs();
+                    Log.d("IBMIoTCloudProfile", "New cloud configuration :" + config.toString());
                     if (client != null) {
-                        config = readCloudConfigFromPrefs();
-                        if (client.isConnected()) {
-                            disconnect();
-                            connect();
+                        try {
+                            if (client.isConnected()) {
+                                disconnect();
+                                connect();
+                            }
+                        }
+                        catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 }
@@ -261,9 +263,17 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
 
                 @Override
                 public void onFailure(IMqttToken iMqttToken, Throwable throwable) {
-                    Log.d("IBMIoTCloudProfile","Connection to IBM cloud failed !");
-                    Log.d("IBMIoTCloudProfile","Error: " + throwable.getLocalizedMessage());
+                    Log.d("IBMIoTCloudProfile", "Connection to IBM cloud failed !");
+                    Log.d("IBMIoTCloudProfile", "Error: " + throwable.getLocalizedMessage());
                     ((IBMIoTCloudTableRow) tRow).setCloudConnectionStatusImage(context.getResources().getDrawable(R.drawable.cloud_disconnected));
+                    AlertDialog.Builder b = new AlertDialog.Builder(context);
+                    b.setTitle("Connection to Cloud failed !");
+                    b.setMessage(Html.fromHtml("<b>Connection to : </b><br>" + client.getServerURI() + "<br><br><b>Device id : </b><br>" + client.getClientId()
+                            + "<br><br><b>Failed with error code :</b><br><font color='#FF0000'>" + throwable.getLocalizedMessage() + "</font>"));
+                    b.setPositiveButton("OK", null);
+                    b.create().show();
+                    ((IBMIoTCloudTableRow) tRow).pushToCloud.setChecked(false);
+                    disconnect();
                 }
             });
         }
@@ -307,7 +317,7 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
         this.valueMap.put(variableName,Value);
     }
     public void addSensorValueToPendingMessage(Map.Entry<String,String> e) {
-        this.valueMap.put(e.getKey(),e.getValue());
+        this.valueMap.put(e.getKey(), e.getValue());
     }
     @Override
     public void onPause() {
@@ -430,15 +440,29 @@ public class IBMIoTCloudProfile extends GenericBluetoothProfile {
     public cloudConfig readCloudConfigFromPrefs() {
         cloudConfig c = new cloudConfig();
         try {
-            c.service = Integer.parseInt(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_SERVICE,this.context),10);
+            c.service = Integer.parseInt(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_SERVICE, this.context), 10);
             c.username = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_USERNAME,this.context);
             c.password = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_PASSWORD,this.context);
-            c.deviceId = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_DEVICE_ID,this.context);
-            c.brokerAddress = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_BROKER_ADDR,this.context);
-            c.brokerPort = Integer.parseInt(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_BROKER_PORT,this.context),10);
-            c.publishTopic = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_PUBLISH_TOPIC,this.context);
+            c.deviceId = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_DEVICE_ID, this.context);
+            c.brokerAddress = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_BROKER_ADDR, this.context);
+            c.brokerPort = Integer.parseInt(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_BROKER_PORT, this.context), 10);
+            c.publishTopic = CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_PUBLISH_TOPIC, this.context);
             c.cleanSession = Boolean.parseBoolean(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_CLEAN_SESSION,this.context));
             c.useSSL = Boolean.parseBoolean(CloudProfileConfigurationDialogFragment.retrieveCloudPref(CloudProfileConfigurationDialogFragment.PREF_CLOUD_USE_SSL,this.context));
+            if (c.service == CloudProfileConfigurationDialogFragment.DEF_CLOUD_IBMQUICKSTART_CLOUD_SERVICE) {
+                ((IBMIoTCloudTableRow) this.tRow).cloudURL.setText("Open in browser");
+                ((IBMIoTCloudTableRow) this.tRow).cloudURL.setAlpha(1.0f);
+                ((IBMIoTCloudTableRow) this.tRow).cloudURL.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        v.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://quickstart.internetofthings.ibmcloud.com/#/device/" + addrShort + "/sensor/")));
+                    }
+                });
+            }
+            else {
+                ((IBMIoTCloudTableRow) this.tRow).cloudURL.setText("");
+                ((IBMIoTCloudTableRow) this.tRow).cloudURL.setAlpha(0.1f);
+            }
         }
         catch (Exception e) {
             e.printStackTrace();

@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagHumidityProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -115,7 +113,11 @@ public class SensorTagHumidityProfile extends GenericBluetoothProfile {
         public void didUpdateValueForCharacteristic(BluetoothGattCharacteristic c) {
             byte[] value = c.getValue();
 				if (c.equals(this.dataC)){
-					Point3D v = Sensor.HUMIDITY.convert(value);
+                    Point3D v;
+                    if (SensorTagUtil.isSensorTag2(mBTDevice)) {
+                          v = Sensor.HUMIDITY2.convert(value);
+                    }
+					else  v = Sensor.HUMIDITY.convert(value);
 					if (this.tRow.config == false) this.tRow.value.setText(String.format("%.1f %%rH", v.x));
 					this.tRow.sl1.maxVal = 100;
 					this.tRow.sl1.minVal = 0;
@@ -124,7 +126,11 @@ public class SensorTagHumidityProfile extends GenericBluetoothProfile {
 		}
     @Override
     public Map<String,String> getMQTTMap() {
-        Point3D v = Sensor.HUMIDITY.convert(this.dataC.getValue());
+        Point3D v;
+        if (SensorTagUtil.isSensorTag2(mBTDevice)) {
+            v = Sensor.HUMIDITY2.convert(this.dataC.getValue());
+        }
+        else  v = Sensor.HUMIDITY.convert(this.dataC.getValue());
         Map<String,String> map = new HashMap<String, String>();
         map.put("humidity",String.format("%.2f",v.x));
         return map;

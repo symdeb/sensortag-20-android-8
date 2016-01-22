@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagMovementTableRow.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -60,7 +58,9 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.ti.util.GenericCharacteristicTableRow;
@@ -71,12 +71,13 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 	public final SparkLineView sl7,sl8,sl9;
 	public final TextView gyroValue;
 	public final TextView magValue;
-	
+	public Switch WOS;
+
 	public SensorTagMovementTableRow(Context con) {
 		super(con);
 
 		this.sl1.autoScale = this.sl2.autoScale = this.sl3.autoScale = true;
-		this.sl1.autoScaleBounceBack = this.sl2.autoScaleBounceBack = this.sl3.autoScaleBounceBack = true;
+		this.sl1.autoScaleBounceBack = this.sl2.autoScaleBounceBack = this.sl3.autoScaleBounceBack = false;
 		this.sl2.setVisibility(View.VISIBLE);
 		this.sl3.setVisibility(View.VISIBLE);	
 		this.sl2.setEnabled(true);
@@ -84,11 +85,6 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		this.sl2.setColor(255, 0, 150, 125);
 		this.sl3.setColor(255, 0, 0, 0);
 
-		this.sl2.autoScale = true;
-		this.sl3.autoScale = true;
-		this.sl2.autoScaleBounceBack = true;
-		this.sl3.autoScaleBounceBack = true;
-		
 		//One Sparkline showing Gyroscope trends
 		this.sl4 = new SparkLineView(con) {
 			{
@@ -145,7 +141,7 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		};
 		this.gyroValue = new TextView(con) {
 			{
-				setTextSize(TypedValue.COMPLEX_UNIT_PT,8.0f);
+				setTextSize(TypedValue.COMPLEX_UNIT_PT, 8.0f);
 				setTextAlignment(TEXT_ALIGNMENT_VIEW_END);
 				setId(12);
 				setVisibility(View.VISIBLE);
@@ -153,10 +149,17 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		};
 		this.magValue = new TextView(con) {
 			{
-				setTextSize(TypedValue.COMPLEX_UNIT_PT,8.0f);
+				setTextSize(TypedValue.COMPLEX_UNIT_PT, 8.0f);
 				setTextAlignment(TEXT_ALIGNMENT_VIEW_END);
 				setId(13);
 				setVisibility(View.VISIBLE);
+			}
+		};
+
+		this.WOS = new Switch(con) {
+			{
+				setText("Wake on shake");
+				setId(14);
 			}
 		};
 		
@@ -164,13 +167,14 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		        RelativeLayout.LayoutParams.MATCH_PARENT,
 		        RelativeLayout.LayoutParams.MATCH_PARENT);
         tmpLayoutParams.addRule(RelativeLayout.BELOW,
-		        this.sl3.getId());
-        tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF,icon.getId());
+				this.sl3.getId());
+        tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF, icon.getId());
 		gyroValue.setLayoutParams(tmpLayoutParams);
 
         tmpLayoutParams = new RelativeLayout.LayoutParams(
 		        RelativeLayout.LayoutParams.MATCH_PARENT,
 		        RelativeLayout.LayoutParams.MATCH_PARENT);
+		tmpLayoutParams.setMargins(0, 10, 0, 20);
         tmpLayoutParams.addRule(RelativeLayout.BELOW,
 				gyroValue.getId());
         tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF, icon.getId());
@@ -182,21 +186,35 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		        RelativeLayout.LayoutParams.MATCH_PARENT,
 		        RelativeLayout.LayoutParams.MATCH_PARENT);
         tmpLayoutParams.addRule(RelativeLayout.BELOW,
-		        this.sl6.getId());
-        tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF,icon.getId());
+				this.sl6.getId());
+        tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF, icon.getId());
 		magValue.setLayoutParams(tmpLayoutParams);
 
         tmpLayoutParams = new RelativeLayout.LayoutParams(
 		        RelativeLayout.LayoutParams.MATCH_PARENT,
 		        RelativeLayout.LayoutParams.MATCH_PARENT);
+		tmpLayoutParams.setMargins(0, 10, 0, 20);
         tmpLayoutParams.addRule(RelativeLayout.BELOW,
 				magValue.getId());
         tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF, icon.getId());
 		this.sl7.setLayoutParams(tmpLayoutParams);
 		this.sl8.setLayoutParams(tmpLayoutParams);
 		this.sl9.setLayoutParams(tmpLayoutParams);
-		
-		
+
+
+
+		RelativeLayout.LayoutParams WOSLayoutParams = new RelativeLayout.LayoutParams(
+				RelativeLayout.LayoutParams.WRAP_CONTENT,
+				RelativeLayout.LayoutParams.MATCH_PARENT);
+		WOSLayoutParams.setMargins(0, 10, 0, 20);
+		WOSLayoutParams.addRule(RelativeLayout.BELOW,
+				sl9.getId());
+		WOSLayoutParams.addRule(RelativeLayout.RIGHT_OF, icon.getId());
+		this.WOS.setLayoutParams(WOSLayoutParams);
+
+
+
+
 		rowLayout.addView(gyroValue);
 		rowLayout.addView(this.sl4);
 		rowLayout.addView(this.sl5);
@@ -206,6 +224,7 @@ public class SensorTagMovementTableRow extends GenericCharacteristicTableRow {
 		rowLayout.addView(this.sl7);
 		rowLayout.addView(this.sl8);
 		rowLayout.addView(this.sl9);
+		rowLayout.addView(this.WOS);
 		
 		
 		

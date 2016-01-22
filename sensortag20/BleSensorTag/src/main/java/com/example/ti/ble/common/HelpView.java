@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       HelpView.java
-  Revised:        $Date: 2013-08-30 12:02:37 +0200 (fr, 30 aug 2013) $
-  Revision:       $Revision: 27470 $
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 

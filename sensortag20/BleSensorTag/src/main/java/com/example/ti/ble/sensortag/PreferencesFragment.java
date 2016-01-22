@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       PreferencesFragment.java
-  Revised:        $Date: 2013-09-03 16:44:05 +0200 (ti, 03 sep 2013) $
-  Revision:       $Revision: 27592 $
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 

@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       FwUpdateActivity.java
-  Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
-  Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 
@@ -111,10 +109,9 @@ public class FwUpdateActivity extends Activity {
   private static final int HAL_FLASH_WORD_SIZE = 4;
   private static final int OAD_BUFFER_SIZE = 2 + OAD_BLOCK_SIZE;
   private static final int OAD_IMG_HDR_SIZE = 8;
-	private static final long TIMER_INTERVAL = 1000;
-	
-	private static final int SEND_INTERVAL = 20; // Milliseconds (make sure this is longer than the connection interval)
-	private static final int BLOCKS_PER_CONNECTION = 4; // May sent up to four blocks per connection
+  private static final long TIMER_INTERVAL = 1000;
+  private static final int SEND_INTERVAL = 20; // Milliseconds (make sure this is longer than the connection interval)
+  private static final int BLOCKS_PER_CONNECTION = 1; // May sent up to four blocks per connection
 
   // GUI
   private TextView mTargImage;
@@ -152,6 +149,8 @@ public class FwUpdateActivity extends Activity {
   private boolean mProgramming = false;
   private IntentFilter mIntentFilter;
 
+  FwUpdateActivity mThis;
+
 
   public FwUpdateActivity() {
     mDeviceActivity = DeviceActivity.getInstance();
@@ -172,8 +171,10 @@ public class FwUpdateActivity extends Activity {
       mCharIdentify = mCharListOad.get(0);
       mCharBlock = mCharListOad.get(1);
       mCharBlock.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+      mLeService.setCharacteristicNotification(mCharBlock,true);
       mCharConnReq = mCharListCc.get(1);
     }
+    mThis = this;
   }
 
   @Override
@@ -269,31 +270,36 @@ public class FwUpdateActivity extends Activity {
   }
 
   private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
-		@Override
-		public void onReceive(Context context, Intent intent) {
+    @Override
+    public void onReceive(Context context, Intent intent) {
 
-			final String action = intent.getAction();
+      final String action = intent.getAction();
 
-	    if (BluetoothLeService.ACTION_DATA_NOTIFY.equals(action)) {
-				byte [] value = intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA);
-				String uuidStr = intent.getStringExtra(BluetoothLeService.EXTRA_UUID);
-				
-		    if (uuidStr.equals(mCharIdentify.getUuid().toString())) {
-		    	// Image info notification
-		      mTargImgHdr.ver = Conversion.buildUint16(value[1], value[0]);
-		      mTargImgHdr.imgType = ((mTargImgHdr.ver & 1) == 1) ? 'B' : 'A';
-		      mTargImgHdr.len = Conversion.buildUint16(value[3], value[2]);
-		      displayImageInfo(mTargImage, mTargImgHdr);
-		    }
-		    
-			} else if (BluetoothLeService.ACTION_DATA_WRITE.equals(action)) {
-				int status = intent.getIntExtra(BluetoothLeService.EXTRA_STATUS,BluetoothGatt.GATT_SUCCESS);
-				if (status != BluetoothGatt.GATT_SUCCESS) {
-					Toast.makeText(context, "GATT error: status=" + status, Toast.LENGTH_SHORT).show();
-				}
-			}
-		}
-	};
+      if (BluetoothLeService.ACTION_DATA_NOTIFY.equals(action)) {
+        byte [] value = intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA);
+        String uuidStr = intent.getStringExtra(BluetoothLeService.EXTRA_UUID);
+
+        if (uuidStr.equals(mCharIdentify.getUuid().toString())) {
+          // Image info notification
+          mTargImgHdr.ver = Conversion.buildUint16(value[1], value[0]);
+          mTargImgHdr.imgType = ((mTargImgHdr.ver & 1) == 1) ? 'B' : 'A';
+          mTargImgHdr.len = Conversion.buildUint16(value[3], value[2]);
+          displayImageInfo(mTargImage, mTargImgHdr);
+        }
+        if (uuidStr.equals(mCharBlock.getUuid().toString())) {
+          if (mProgramming == true) programBlock(((value[1] << 8) & 0xff00) + (value[0] & 0x00ff));
+          Log.d("FwUpdateActivity",String.format("NB: %02x%02x",value[1],value[0]));
+        }
+      }
+      else if (BluetoothLeService.ACTION_DATA_WRITE.equals(action)) {
+        int status = intent.getIntExtra(BluetoothLeService.EXTRA_STATUS,BluetoothGatt.GATT_SUCCESS);
+        if (status != BluetoothGatt.GATT_SUCCESS) {
+          Toast.makeText(context, "GATT error: status=" + status, Toast.LENGTH_SHORT).show();
+        }
+
+      }
+    }
+  };
 
 
   private void initIntentFilter() {
@@ -468,15 +474,17 @@ public class FwUpdateActivity extends Activity {
 
   private void getTargetImageInfo() {
     // Enable notification
-    int ok = mLeService.setCharacteristicNotification(mCharIdentify, true);
+    mLeService.setCharacteristicNotification(mCharIdentify, true);
     // Prepare data for request (try image A and B respectively, only one of
     // them will give a notification with the image info)
-    if (ok == 0)
-      ok = mLeService.writeCharacteristic(mCharIdentify, (byte) 0);
-    if (ok == 0)
-      ok = mLeService.writeCharacteristic(mCharIdentify, (byte) 1);
-    if (ok != 0)
-      Toast.makeText(this, "Failed to get target info", Toast.LENGTH_LONG).show();
+    int count = 0;
+    int ok = 1;
+    while (ok !=0 && count < 5) {
+      count ++;
+        ok = mLeService.writeCharacteristic(mCharIdentify, (byte) 0);
+      if (ok == 0)
+        ok = mLeService.writeCharacteristic(mCharIdentify, (byte) 1);
+    }
   }
 
 
@@ -505,13 +513,15 @@ public class FwUpdateActivity extends Activity {
    * Called when a notification with the current image info has been received
    */
 
-  private void programBlock() {
+  private void programBlock(int block) {
   	if (!mProgramming)
   		return;
   	
     if (mProgInfo.iBlocks < mProgInfo.nBlocks) {
       mProgramming = true;
       String msg = new String();
+
+      mProgInfo.iBlocks = (short)block;
 
       // Prepare block
       mOadBuffer[0] = Conversion.loUint16(mProgInfo.iBlocks);
@@ -520,6 +530,7 @@ public class FwUpdateActivity extends Activity {
 
       // Send block
       mCharBlock.setValue(mOadBuffer);
+      Log.d("FwUpdateActivity",String.format("TX Block %02x%02x",mOadBuffer[1],mOadBuffer[0]));
       boolean success = mLeService.writeCharacteristicNonBlock(mCharBlock);
 
       if (success) {
@@ -528,22 +539,20 @@ public class FwUpdateActivity extends Activity {
         mProgInfo.iBytes += OAD_BLOCK_SIZE;
         mProgressBar.setProgress((mProgInfo.iBlocks * 100) / mProgInfo.nBlocks);
           if (mProgInfo.iBlocks == mProgInfo.nBlocks) {
-              AlertDialog.Builder b = new AlertDialog.Builder(this);
 
-              b.setMessage(R.string.oad_dialog_programming_finished);
-              b.setTitle("Programming finished");
-              b.setPositiveButton("OK",null);
+            runOnUiThread(new Runnable() {
+              public void run() {
+                AlertDialog.Builder b = new AlertDialog.Builder(mThis);
 
-              AlertDialog d = b.create();
-              d.show();
+                b.setMessage(R.string.oad_dialog_programming_finished);
+                b.setTitle("Programming finished");
+                b.setPositiveButton("OK", null);
+
+                AlertDialog d = b.create();
+                d.show();
+              }
+            });
           }
-        /*
-        if (!mLeService.waitIdle(GATT_WRITE_TIMEOUT)) {
-        	mProgramming = false;
-        	success = false;
-        	msg = "GATT write timeout\n";
-        }
-        */
       } else {
          mProgramming = false;
       	 msg = "GATT writeCharacteristic failed\n";
@@ -575,7 +584,7 @@ public class FwUpdateActivity extends Activity {
 	        e.printStackTrace();
         }
 				for (int i=0; i<BLOCKS_PER_CONNECTION & mProgramming; i++) {
-					programBlock();
+					//programBlock();
 				}
 				if ((mProgInfo.iBlocks % 100) == 0) {
 					// Display statistics each 100th block

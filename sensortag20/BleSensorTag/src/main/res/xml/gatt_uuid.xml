@@ -51,6 +51,12 @@
     <item uuid="0xCCC3" descr="Change the value to disconnect">Disconnect request</item>
   </profile>
   <profile>
+    <name>Display Service</name>
+    <item uuid="0xAD00">Display Control Service</item>
+    <item uuid="0xAD01" icon="display">Display Data</item>
+    <item uuid="0xAD02">Display Control</item>
+  </profile>
+  <profile>
     <name>Poly Tag</name>
     <item uuid="0xAD10">Accelerometer Service</item>
     <item uuid="0xAD11" descr="X : Y : Z Coordinates">Accelerometer Data</item>
@@ -85,6 +91,15 @@
     <item uuid="0xACC1" descr="Range: 0xCE .. 0x32">Throttle</item>
     <item uuid="0xACC2" descr="Range: 0xCE .. 0x32">Steering</item>
     <item uuid="0xACC3" descr="Not implemented">Lights/Horn</item>
+  </profile>
+  <profile>
+    <name>Light Control</name>
+    <item uuid="0xFFB0" icon="light">Light Control Service</item>
+    <item uuid="0xFFB1" descr="Range: 0x00 - 0xFF">Red</item>
+    <item uuid="0xFFB1" descr="Range: 0x00 - 0xFF">Green</item>
+    <item uuid="0xFFB1" descr="Range: 0x00 - 0xFF">Blue</item>
+    <item uuid="0xFFB1" descr="Range: 0x00 - 0xFF">White</item>
+    <item uuid="0xFFB1" descr="Range: 0x00 - 0xFF, R,G,B,W one byte for each">Compound Value</item>
   </profile>
   <profile>
     <name>OAD</name>

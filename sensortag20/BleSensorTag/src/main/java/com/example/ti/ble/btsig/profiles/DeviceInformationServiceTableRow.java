@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       DeviceInformationServiceTableRow.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -165,6 +163,7 @@ public class DeviceInformationServiceTableRow extends
         tmpLayoutParams = new RelativeLayout.LayoutParams(
 		        RelativeLayout.LayoutParams.MATCH_PARENT,
 		        RelativeLayout.LayoutParams.MATCH_PARENT);
+		tmpLayoutParams.setMargins(0,0,0,30);
         tmpLayoutParams.addRule(RelativeLayout.BELOW,
 		        this.SoftwareREVLabel.getId());
         tmpLayoutParams.addRule(RelativeLayout.RIGHT_OF,icon.getId());

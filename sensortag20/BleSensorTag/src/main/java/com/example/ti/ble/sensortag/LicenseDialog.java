@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       LicenseDialog.java
-  Revised:        $Date: 2014-01-07 16:17:34 +0100 (ti, 07 jan 2014) $
-  Revision:       $Revision: 28784 $
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 

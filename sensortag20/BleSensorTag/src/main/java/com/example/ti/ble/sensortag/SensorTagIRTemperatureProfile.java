@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagIRTemperatureProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -103,15 +101,15 @@ import com.example.ti.util.Point3D;
 			if (c.equals(this.dataC)){
 				if (this.mBTDevice.getName().equals("CC2650 SensorTag")) {
 					Point3D v = Sensor.IR_TEMPERATURE.convert(value);
-					if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f'F", (v.z * 1.8) + 32));
-					else this.tRow.value.setText(String.format("%.1f'C", v.z));
+					if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f°F", (v.z * 1.8) + 32));
+					else this.tRow.value.setText(String.format("%.1f°C", v.z));
 					this.tRow.sl1.addValue((float)v.z);
 				}
 				else {
 					Point3D v = Sensor.IR_TEMPERATURE.convert(value);
 					if (this.tRow.config == false) {
-						if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f'F", (v.y * 1.8) + 32));
-						else this.tRow.value.setText(String.format("%.1f'C", v.y));
+						if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f°F", (v.y * 1.8) + 32));
+						else this.tRow.value.setText(String.format("%.1f°C", v.y));
 					}	
 					this.tRow.sl1.addValue((float)v.y); 
 				}

@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       HCIDefines.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -77,7 +75,7 @@ public class HCIDefines {
         hciErrorCodeStrings.put(0x0A,"Synchronous Connection Limit To A Device Exceeded");
         hciErrorCodeStrings.put(0x0B,"ACL Connection Already Exists");
         hciErrorCodeStrings.put(0x0C,"Command Disallowed");
-        hciErrorCodeStrings.put(0x0D,"Connected Rejected Due To Limited Resources");
+        hciErrorCodeStrings.put(0x0D,"Connection Rejected Due To Limited Resources");
         hciErrorCodeStrings.put(0x0E,"Connection Rejected Due To Security Reasons");
         hciErrorCodeStrings.put(0x0F,"Connection Rejected Due To Unacceptable BD_ADDR");
         hciErrorCodeStrings.put(0x10,"Connection Accept Timeout Exceeded");

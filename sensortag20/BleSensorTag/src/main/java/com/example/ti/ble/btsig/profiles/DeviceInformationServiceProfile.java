@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       DeviceInformationServiceProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -55,6 +53,7 @@
 package com.example.ti.ble.btsig.profiles;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import android.bluetooth.BluetoothDevice;
@@ -79,7 +78,7 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 	private static final String dISManifacturerNAME_UUID = "00002a29-0000-1000-8000-00805f9b34fb";
 	public final static String ACTION_FW_REV_UPDATED = "com.example.ti.ble.btsig.ACTION_FW_REV_UPDATED";
 	public final static String EXTRA_FW_REV_STRING = "com.example.ti.ble.btsig.EXTRA_FW_REV_STRING";
-	
+
 	BluetoothGattCharacteristic systemIDc;
 	BluetoothGattCharacteristic modelNRc;
 	BluetoothGattCharacteristic serialNRc;
@@ -88,13 +87,13 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 	BluetoothGattCharacteristic softwareREVc;
 	BluetoothGattCharacteristic ManifacturerNAMEc;
 	DeviceInformationServiceTableRow tRow;
-	
+
 	public DeviceInformationServiceProfile(Context con,BluetoothDevice device,BluetoothGattService service,BluetoothLeService controller) {
 		super(con,device,service,controller);
 		this.tRow =  new DeviceInformationServiceTableRow(con);
-		
+
 		List<BluetoothGattCharacteristic> characteristics = this.mBTService.getCharacteristics();
-		
+
 		for (BluetoothGattCharacteristic c : characteristics) {
 			if (c.getUuid().toString().equals(dISSystemID_UUID)) {
 				this.systemIDc = c;
@@ -131,7 +130,7 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 	@Override
 	public void configureService() {
 		// Nothing to do here
-		
+
 	}
 	@Override
 	public void deConfigureService() {
@@ -160,8 +159,21 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 	}
 	@Override
 	public void didWriteValueForCharacteristic(BluetoothGattCharacteristic c) {
-		
+
 	}
+	private String getValueSafe(BluetoothGattCharacteristic c) {
+		byte b[] = c.getValue();
+		if (b == null) {
+			b = "N/A".getBytes(Charset.forName("UTF-8"));
+		}
+		try {
+			return new String(b, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+			return "";
+		}
+	}
+
 	@Override
 	public void didReadValueForCharacteristic(BluetoothGattCharacteristic c) {
 		if (this.systemIDc != null) {
@@ -171,73 +183,42 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 					s+= String.format("%02x:", b);
 				}
 				this.tRow.SystemIDLabel.setText(s);
-				
+
 			}
 		}
 		if (this.modelNRc != null) {
 			if (c.equals(this.modelNRc)) {
-				try {
-					this.tRow.ModelNRLabel.setText("Model NR: " + new String(c.getValue(),"UTF-8"));
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				this.tRow.ModelNRLabel.setText("Model NR: " + getValueSafe(c));
 			}
 		}
 		if (this.serialNRc != null) {
 			if (c.equals(this.serialNRc)) {
-				try {
-					this.tRow.SerialNRLabel.setText("Serial NR: " + new String(c.getValue(),"UTF-8"));
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				this.tRow.SerialNRLabel.setText("Serial NR: " + getValueSafe(c));
 			}
 		}
 		if (this.firmwareREVc != null) {
 			if (c.equals(this.firmwareREVc)) {
-				try {
-					String s = new String(c.getValue(),"UTF-8");
-					this.tRow.FirmwareREVLabel.setText("Firmware Revision: " + s);
-					//Post firmware revision to Device activity
-					final Intent intent = new Intent(ACTION_FW_REV_UPDATED);
-					intent.putExtra(EXTRA_FW_REV_STRING, s);
-					context.sendBroadcast(intent);
-					
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				String s = getValueSafe(c);
+				this.tRow.FirmwareREVLabel.setText("Firmware Revision: " + s);
+				//Post firmware revision to Device activity
+				final Intent intent = new Intent(ACTION_FW_REV_UPDATED);
+				intent.putExtra(EXTRA_FW_REV_STRING, s);
+				context.sendBroadcast(intent);
 			}
 		}
 		if (this.hardwareREVc != null) {
 			if (c.equals(this.hardwareREVc)) {
-				try {
-					this.tRow.HardwareREVLabel.setText("Hardware Revision: " + new String(c.getValue(),"UTF-8"));
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				this.tRow.HardwareREVLabel.setText("Hardware Revision: " + getValueSafe(c));
 			}
 		}
 		if (this.softwareREVc != null) {
 			if (c.equals(this.softwareREVc)) {
-				try {
-					this.tRow.SoftwareREVLabel.setText("Software Revision: " + new String(c.getValue(),"UTF-8"));
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				this.tRow.SoftwareREVLabel.setText("Software Revision: " + getValueSafe(c));
 			}
 		}
 		if (this.ManifacturerNAMEc != null) {
 			if (c.equals(this.ManifacturerNAMEc)) {
-				try {
-					this.tRow.ManifacturerNAMELabel.setText("Manifacturer Name: " + new String(c.getValue(),"UTF-8"));
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				this.tRow.ManifacturerNAMELabel.setText("Manifacturer Name: " + getValueSafe(c));
 			}
 		}
 	}
@@ -250,12 +231,12 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 		if (this.mBTDevice.getName().equals("CC2650 SensorTag")) {
 			iconPrefix = "sensortag2";
 		}
-		else iconPrefix = ""; 
+		else iconPrefix = "";
 		return iconPrefix;
 	}
-	@Override 
+	@Override
 	public TableRow getTableRow() {
 		return this.tRow;
 	}
-	
+
 }

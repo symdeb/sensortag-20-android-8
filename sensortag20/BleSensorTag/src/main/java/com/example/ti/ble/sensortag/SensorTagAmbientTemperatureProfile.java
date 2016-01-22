@@ -1,7 +1,5 @@
 /**************************************************************************************************
  Filename:       SensorTagAmbientTemperatureProfile.java
- Revised:        $Date: Wed Apr 22 13:01:34 2015 +0200$
- Revision:       $Revision: 599e5650a33a4a142d060c959561f9e9b0d88146$
 
  Copyright (c) 2013 - 2015 Texas Instruments Incorporated
 
@@ -110,13 +108,6 @@ public class SensorTagAmbientTemperatureProfile extends GenericBluetoothProfile 
             if (this.dataC != null)
             Log.d("SensorTagAmbientTemperatureProfile","Sensor notification enable failed: " + this.configC.getUuid().toString() + " Error: " + error);
         }
-        /*
-		if (mBTLeService.writeCharacteristic(this.configC, (byte)0x01)) {
-			mBTLeService.waitIdle(GATT_TIMEOUT);
-		} else {
-			Log.d("SensorTagAmbientTemperatureProfile","Sensor config failed: " + this.configC.getUuid().toString());
-        }
-        */
 
 		this.isConfigured = true;
 	}
@@ -139,8 +130,8 @@ public class SensorTagAmbientTemperatureProfile extends GenericBluetoothProfile 
 		if (c.equals(this.dataC)){
 			Point3D v = Sensor.IR_TEMPERATURE.convert(value);
 			if (this.tRow.config == false) { 
-				if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f'F", (v.x * 1.8) + 32));
-				else this.tRow.value.setText(String.format("%.1f'C", v.x));
+				if ((this.isEnabledByPrefs("imperial")) == true) this.tRow.value.setText(String.format("%.1f°F", (v.x * 1.8) + 32));
+				else this.tRow.value.setText(String.format("%.1f°C", v.x));
 			}
 			this.tRow.sl1.addValue((float)v.x);
 		}

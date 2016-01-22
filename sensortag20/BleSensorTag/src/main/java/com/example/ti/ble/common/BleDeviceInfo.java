@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       BleDeviceInfo.java
-  Revised:        $Date: 2013-08-30 12:08:11 +0200 (fr, 30 aug 2013) $
-  Revision:       $Revision: 27477 $
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 

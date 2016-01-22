@@ -1,7 +1,5 @@
 /**************************************************************************************************
   Filename:       ViewPagerActivity.java
-  Revised:        $Date: 2013-09-09 16:23:36 +0200 (ma, 09 sep 2013) $
-  Revision:       $Revision: 27674 $
 
   Copyright (c) 2013 - 2014 Texas Instruments Incorporated
 

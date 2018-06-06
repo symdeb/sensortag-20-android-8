@@ -26,7 +26,6 @@
         android:debuggable="true"
         android:icon="@drawable/tible"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@android:style/Theme.Holo.Light" >
         <service
             android:name="com.example.ti.ble.common.BluetoothLeService"

@@ -187,6 +187,8 @@ import com.example.ti.util.PreferenceWR;
         // GATT database
 		Resources res = getResources();
 		XmlResourceParser xpp = res.getXml(R.xml.gatt_uuid);
+
+
 		new GattInfo(xpp);
 
 	}

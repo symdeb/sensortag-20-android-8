@@ -4,6 +4,7 @@ ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleS
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
+MERGED from [com.android.support:support-v4:21.0.0] /home/user/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.0.aar/b8fc4406579c15658c0988e9d692ca3d/AndroidManifest.xml:14:4-17:12
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-80:12
@@ -49,6 +50,8 @@ uses-sdk
 ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:15:5-17:41
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:15:5-17:41
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:15:5-17:41
+MERGED from [com.android.support:support-v4:21.0.0] /home/user/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.0.aar/b8fc4406579c15658c0988e9d692ca3d/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.0] /home/user/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.0.aar/b8fc4406579c15658c0988e9d692ca3d/AndroidManifest.xml:15:5-42
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:15:5-17:41
 INJECTED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:15:5-17:41
 	android:targetSdkVersion
@@ -67,6 +70,8 @@ ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleS
 		ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:20:9-53
 application
 ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:23:5-77:19
+MERGED from [com.android.support:support-v4:21.0.0] /home/user/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.0.aar/b8fc4406579c15658c0988e9d692ca3d/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.0] /home/user/.gradle/caches/transforms-1/files-1.1/support-v4-21.0.0.aar/b8fc4406579c15658c0988e9d692ca3d/AndroidManifest.xml:16:5-19
 	android:label
 		ADDED from /media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:26:9-41
 	android:icon

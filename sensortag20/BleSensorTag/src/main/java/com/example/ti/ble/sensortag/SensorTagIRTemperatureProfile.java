@@ -87,13 +87,17 @@ import com.example.ti.util.Point3D;
 			this.tRow.sl1.autoScale = true;
 			this.tRow.sl1.autoScaleBounceBack = true;
 			this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString());
-			
+
 			this.tRow.title.setText("IR Temperature Data");
 			this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
 			this.tRow.value.setText("0.0'C");
 			this.tRow.periodMinVal = 200;
 			this.tRow.periodBar.setMax(255 - (this.tRow.periodMinVal / 10));
 			this.tRow.periodBar.setProgress(100);
+
+			// CHANGE
+			this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"irtemperature");
+
 		}
         @Override
         public void didUpdateValueForCharacteristic(BluetoothGattCharacteristic c) {

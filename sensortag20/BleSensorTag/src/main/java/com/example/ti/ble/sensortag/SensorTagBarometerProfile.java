@@ -84,6 +84,9 @@ public class SensorTagBarometerProfile extends GenericBluetoothProfile {
 			if (c.getUuid().toString().equals(SensorTagGatt.UUID_BAR_DATA.toString())) {
 				this.dataC = c;
 			}
+			if (c.getUuid().toString().equals(SensorTagGatt.UUID_BAR_SERV.toString())) {
+				this.dataC = c;
+			}
 			if (c.getUuid().toString().equals(SensorTagGatt.UUID_BAR_CONF.toString())) {
 				this.configC = c;
 			}
@@ -105,12 +108,17 @@ public class SensorTagBarometerProfile extends GenericBluetoothProfile {
 		this.tRow.sl1.autoScaleBounceBack = true;
 		this.tRow.sl1.setColor(255, 0, 150, 125);
 		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString());
-		
+
 		this.tRow.title.setText(GattInfo.uuidToName(UUID.fromString(this.dataC.getUuid().toString())));
 		this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
 		this.tRow.value.setText("0.0mBar, 0.0m");
 		this.tRow.periodBar.setProgress(100);
-	}
+
+        // CHANGE
+        this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"barometer");
+        this.tRow.title.setText("Barometer Data");
+
+    }
 	
 	public static boolean isCorrectService(BluetoothGattService service) {
 		if ((service.getUuid().toString().compareTo(SensorTagGatt.UUID_BAR_SERV.toString())) == 0) {

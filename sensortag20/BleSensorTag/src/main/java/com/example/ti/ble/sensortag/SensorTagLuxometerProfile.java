@@ -97,6 +97,11 @@ public class SensorTagLuxometerProfile extends GenericBluetoothProfile {
 			this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
 			this.tRow.value.setText("0.0 Lux");
 			this.tRow.periodBar.setProgress(100);
+
+			// CHANGE
+			this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"sensortag2light");
+			this.tRow.title.setText("Luxometer Data");
+
 		}
 		
 		public static boolean isCorrectService(BluetoothGattService service) {

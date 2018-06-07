@@ -94,6 +94,10 @@ public class SensorTagHumidityProfile extends GenericBluetoothProfile {
 			this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
 			this.tRow.value.setText("0.0%rH");
 			this.tRow.periodBar.setProgress(100);
+
+			this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"humidity");
+			this.tRow.title.setText("Humidity Data");
+
 		}
 		
 		public static boolean isCorrectService(BluetoothGattService service) {

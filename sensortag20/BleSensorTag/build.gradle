@@ -25,7 +25,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
-    compile files('libs/org.eclipse.paho.android.service-1.0.2.jar')
-    compile files('libs/org.eclipse.paho.client.mqttv3-1.0.2.jar')
+    // changed compile to implementation https://developer.android.com/studio/build/gradle-plugin-3-0-0-migration?utm_source=android-studio#new_configurations
+    // using v4:19.0.0 error :support library should not use a different version (19) than the comileSDKVersion (21)
+    // Changed to v4.21.0.0.
+    implementation 'com.android.support:support-v4:21.0.0'
+    implementation files('libs/org.eclipse.paho.android.service-1.0.2.jar')
+    implementation files('libs/org.eclipse.paho.client.mqttv3-1.0.2.jar')
 }

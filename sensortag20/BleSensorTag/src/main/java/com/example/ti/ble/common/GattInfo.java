@@ -62,6 +62,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.res.XmlResourceParser;
+import android.util.Log;
 
 public class GattInfo {
   // Bluetooth SIG identifiers
@@ -149,22 +150,32 @@ public class GattInfo {
     String icon = null;
     int eventType = xpp.getEventType(); 
 
-    while (eventType != XmlPullParser.END_DOCUMENT) {
-      if (eventType == XmlPullParser.START_DOCUMENT) {
+    while (eventType != XmlPullParser.END_DOCUMENT)
+    {
+      if (eventType == XmlPullParser.START_DOCUMENT)
+      {
         // do nothing
-      } else if (eventType == XmlPullParser.START_TAG) {
+      }
+      else if (eventType == XmlPullParser.START_TAG)
+      {
         tagName = xpp.getName();
         uuid = xpp.getAttributeValue(null, "uuid");
         descr = xpp.getAttributeValue(null, "descr");
         icon = xpp.getAttributeValue(null,"icon");
-      } else if (eventType == XmlPullParser.END_TAG) {
+      }
+      else if (eventType == XmlPullParser.END_TAG)
+      {
         // do nothing
-      } else if (eventType == XmlPullParser.TEXT) {
-        if (tagName.equalsIgnoreCase("item")) {
-          if (!uuid.isEmpty()) {
+      } else if (eventType == XmlPullParser.TEXT)
+      {
+        if (tagName.equalsIgnoreCase("item"))
+        {
+          if (!uuid.isEmpty())
+          {
             uuid = uuid.replace("0x", "");
             mNameMap.put(uuid, xpp.getText());
             mDescrMap.put(uuid, descr);
+            //Log.d("[DEBUG] MAP:", " uuid = " + uuid + ", icon = " + icon + " \n");
             mIconMap.put(uuid, icon);
           }
         }

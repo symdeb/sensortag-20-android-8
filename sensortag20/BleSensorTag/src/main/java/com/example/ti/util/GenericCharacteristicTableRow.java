@@ -59,6 +59,7 @@ import java.util.UUID;
 import com.example.ti.ble.common.GattInfo;
 import com.example.ti.ble.sensortag.R;
 
+import android.content.ContentResolver;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -87,6 +88,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import com.example.ti.util.SparkLineView;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 public class GenericCharacteristicTableRow extends TableRow implements View.OnClickListener, Animation.AnimationListener, SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener {
 	//Normal cell operation : Show data contents
@@ -353,11 +355,14 @@ public class GenericCharacteristicTableRow extends TableRow implements View.OnCl
 		Point dSize = new Point();
 		display.getSize(dSize);
 		Drawable image = null;
-		
-		
-		
-		
+
+        Log.d("[DEBUG] SetIcon:", "uuid : " + (UUID.fromString(uuid)));
+
+
 		Log.d("GenericCharacteristicTableRow", "Width : " + dSize.x + " Height : " + dSize.y);
+
+		// Problem is in GattInfo.uuidtoIcon. map is null
+
 		Log.d("GenericCharacteristicTableRow","Fetching icon : " + GattInfo.uuidToIcon(UUID.fromString(uuid)));
 		if (dSize.x > 1100) {
 			Uri uri = Uri.parse("android.resource://"+ this.context.getPackageName()+"/drawable/" + iconPrefix + GattInfo.uuidToIcon(UUID.fromString(uuid)) + "_300");
@@ -367,17 +372,22 @@ public class GenericCharacteristicTableRow extends TableRow implements View.OnCl
 				iconSize = 360;
 			}
 			catch (FileNotFoundException e) {
+				//Toast toast2 = Toast.makeText(context, "Could not find icon filename: " + uri.toString(), Toast.LENGTH_LONG);
+				//toast2.show();
 				Log.d("Could not find icon filename : ", uri.toString());
 			}
 		}
 		else {
 			Uri uri = Uri.parse("android.resource://"+ this.context.getPackageName()+"/drawable/" + iconPrefix + GattInfo.uuidToIcon(UUID.fromString(uuid)));
+            //Uri uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + getResources().getResourcePackageName(R.drawable.barometer) + '/' + getResources().getResourceTypeName(R.drawable.barometer) + '/' + String.valueOf(R.drawable.barometer ));
 			try {
 				InputStream inputStream = this.context.getContentResolver().openInputStream(uri);
 				image = Drawable.createFromStream(inputStream, uri.toString() );
 				iconSize = 210;
 			}
 			catch (FileNotFoundException e) {
+				//Toast toast2 = Toast.makeText(context, "Could not find icon filename: " + uri.toString(), Toast.LENGTH_LONG);
+				//toast2.show();
 				Log.d("Could not find icon filename : ", uri.toString());
 			}
 		}
@@ -401,10 +411,7 @@ public class GenericCharacteristicTableRow extends TableRow implements View.OnCl
 		Point dSize = new Point();
 		display.getSize(dSize);
 		Drawable image = null;
-		
-		
-		
-		
+
 		if (dSize.x > 1100) {
 			Uri uri = Uri.parse("android.resource://"+ this.context.getPackageName()+"/drawable/" + iconPrefix + variantName + "_300");
 			try {

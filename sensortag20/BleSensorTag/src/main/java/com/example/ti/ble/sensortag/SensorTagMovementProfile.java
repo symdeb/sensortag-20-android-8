@@ -92,6 +92,8 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 		
 		
 		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString());
+
+
 		
 		this.tRow.title.setText(GattInfo.uuidToName(UUID.fromString(this.dataC.getUuid().toString())));
 		this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
@@ -116,6 +118,10 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
             }
         });
 		this.tRow.periodBar.setProgress(100);
+
+		// CHANGE
+		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"gyroscope");
+		this.tRow.title.setText("Movement Data");
 	}
 	
 	public static boolean isCorrectService(BluetoothGattService service) {

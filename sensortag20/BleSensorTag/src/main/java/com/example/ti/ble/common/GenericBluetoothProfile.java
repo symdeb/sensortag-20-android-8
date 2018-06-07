@@ -170,11 +170,15 @@ public class GenericBluetoothProfile {
 		return this.tRow;
 	}
 	public String getIconPrefix() {
+
 		String iconPrefix;
-		if (this.mBTDevice.getName().equals("CC2650 SensorTag")) {
-			iconPrefix = "sensortag2";
+		if (this.mBTDevice.getName().equals("CC2650 SensorTag"))
+		{
+			//iconPrefix = "sensortag2";
+            iconPrefix = "";
 		}
 		else iconPrefix = "";
+        //else iconPrefix = "sensorTag2";
 		return iconPrefix;
 	}
 	public boolean isEnabledByPrefs(String prefName) {

@@ -1,4 +1,4 @@
-#Thu Jun 07 23:04:46 CST 2018
-base.0=/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/transforms/dexMerger/debug/4
+#Fri Jun 08 14:51:02 CST 2018
+base.0=D\:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex

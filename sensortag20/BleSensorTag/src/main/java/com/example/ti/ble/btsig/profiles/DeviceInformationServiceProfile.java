@@ -119,7 +119,11 @@ public class DeviceInformationServiceProfile extends GenericBluetoothProfile {
 		}
 		tRow.title.setText("Device Information Service");
 		tRow.sl1.setVisibility(View.INVISIBLE);
-		this.tRow.setIcon(this.getIconPrefix(), service.getUuid().toString());
+		//this.tRow.setIcon(this.getIconPrefix(), service.getUuid().toString());
+
+		// HAPPY
+		this.tRow.setIcon(this.getIconPrefix(), service.getUuid().toString(),"deviceinfo");
+
 	}
 	public static boolean isCorrectService(BluetoothGattService service) {
 		if ((service.getUuid().toString().compareTo(dISService_UUID)) == 0) {

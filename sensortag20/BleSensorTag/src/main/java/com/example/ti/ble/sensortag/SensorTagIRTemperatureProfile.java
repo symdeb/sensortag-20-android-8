@@ -95,7 +95,7 @@ import com.example.ti.util.Point3D;
 			this.tRow.periodBar.setMax(255 - (this.tRow.periodMinVal / 10));
 			this.tRow.periodBar.setProgress(100);
 
-			// CHANGE
+			//HAPPY
 			this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"irtemperature");
 
 		}

@@ -106,6 +106,9 @@ public class TIOADProfile extends GenericBluetoothProfile {
 		tRow.sl1.setVisibility(View.INVISIBLE);
 		this.tRow.setIcon(this.getIconPrefix(), service.getUuid().toString());
 
+		// HAPPY
+        this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"sensortag2oad");
+
         brRecv = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {

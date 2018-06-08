@@ -119,7 +119,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
         });
 		this.tRow.periodBar.setProgress(100);
 
-		// CHANGE
+		// HAPPY
 		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"gyroscope");
 		this.tRow.title.setText("Movement Data");
 	}

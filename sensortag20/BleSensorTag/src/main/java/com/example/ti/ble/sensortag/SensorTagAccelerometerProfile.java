@@ -111,7 +111,10 @@ public class SensorTagAccelerometerProfile extends GenericBluetoothProfile {
 		this.tRow.title.setText(GattInfo.uuidToName(UUID.fromString(this.dataC.getUuid().toString())));
 		this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
 		this.tRow.value.setText("X:0.00G, Y:0.00G, Z:0.00G");
-		
+
+		// HAPPY
+		//this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"accelerometer");
+		//this.tRow.title.setText("Accelerometer Data");
 	}
 	
 	public static boolean isCorrectService(BluetoothGattService service) {

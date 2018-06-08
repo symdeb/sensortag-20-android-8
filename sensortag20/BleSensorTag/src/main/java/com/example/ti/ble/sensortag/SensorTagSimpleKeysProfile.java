@@ -91,9 +91,9 @@ public class SensorTagSimpleKeysProfile extends GenericBluetoothProfile {
 			
 		}
 
-		// CHANGE
+		// HAPPY
 		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString(),"simplekeys");
-		this.tRow.title.setText("Simple Keys Data");
+		this.tRow.title.setText("Key");
 		
 	}
 	public static boolean isCorrectService(BluetoothGattService service) {

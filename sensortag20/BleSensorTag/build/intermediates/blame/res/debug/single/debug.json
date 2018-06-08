@@ -1,602 +1,602 @@
 [
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_st2.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/st2.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_bluetooth.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\ic_action_bluetooth.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml_gatt_uuid.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/xml/gatt_uuid.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reedrelayon_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\reedrelayon_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_deviceinfo_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/deviceinfo_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_magnetometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\magnetometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_refresh.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ic_action_refresh.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2humidity_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2humidity_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_cloud_disconnected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/cloud_disconnected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml_popup.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/xml/popup.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_refresh.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\ic_action_refresh.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2cloudservice_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2cloudservice_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_settings.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\ic_action_settings.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_cloud_connected_tx.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_connected_tx.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_lamp_control.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\lamp_control.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2temperature.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2temperature.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_irtemperature_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\irtemperature_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_accelerometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/accelerometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2lightsensor_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2lightsensor_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_irtemperature_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/irtemperature_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_cloud_connected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\cloud_connected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2deviceinfo_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2deviceinfo_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_cloud_connected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\cloud_connected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2light_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2light_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ti_stk_2c_pos_rgb_png.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ti_stk_2c_pos_rgb_png.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_cloud_connected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/cloud_connected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2simplekeys.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2simplekeys.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_tible.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/tible.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reed_closed.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\reed_closed.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_magnetometer_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/magnetometer_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_simplekeys.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\simplekeys.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_about.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/ic_action_about.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_dialog_license.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\dialog_license.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2cloudservice.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2cloudservice.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2oad_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2oad_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2magnetometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2magnetometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2magnetometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2magnetometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_fragment_help.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/fragment_help.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_refresh.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ic_action_refresh.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_bluetooth.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ic_action_bluetooth.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_settings.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\ic_action_settings.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_reedrelayon_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/reedrelayon_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag2cloudservice_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag2cloudservice_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2motion.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2motion.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_barometer_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\barometer_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_gyroscope_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/gyroscope_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_accelerometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\accelerometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_rightkey_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/rightkey_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2ccs.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2ccs.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_humidity_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/humidity_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_about.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\ic_action_about.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_list_item_normal.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/list_item_normal.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_element_device.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\element_device.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_magnetometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/magnetometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2display_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2display_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2barometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2barometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_element_file.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\element_file.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_cloud_disconnected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/cloud_disconnected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\menu_main_activity_actions.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\menu\\main_activity_actions.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag_simplekeys.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag_simplekeys.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_irtemperature.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\irtemperature.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_leftkeyon_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkeyon_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_humidity.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\humidity.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_settings.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ic_action_settings.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bluetooth.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\bluetooth.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag2cloudservice_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag2cloudservice_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\xml_popup.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\xml\\popup.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2simplekeys.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2simplekeys.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_element_device.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/element_device.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_element_characteristic.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\element_characteristic.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml_firmware_list.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/xml/firmware_list.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2temperature_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2temperature_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_generic_services_browser.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/generic_services_browser.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\xml_firmware_list.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\xml\\firmware_list.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2oad_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2oad_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2irtemperature.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2irtemperature.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2deviceinfo.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2deviceinfo.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_generic_services_browser.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\generic_services_browser.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ti_stk_2c_pos_rgb_png.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ti_stk_2c_pos_rgb_png.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2light_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2light_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_settings.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/ic_action_settings.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_cloud_config_dialog.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\cloud_config_dialog.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_temperature.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/temperature.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_leftkey_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\leftkey_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_irtemperature_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/irtemperature_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_activity_file.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\activity_file.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_colorpicker.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/colorpicker.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_refresh.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\ic_action_refresh.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_element_file.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/element_file.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_refresh.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\ic_action_refresh.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2lightsensor_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2lightsensor_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_simplekeys_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\simplekeys_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_buttonsoffon.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/buttonsoffon.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\xml_gatt_uuid.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\xml\\gatt_uuid.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2oad.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2oad.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_leftkeyoff_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkeyoff_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_gyroscope_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\gyroscope_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_cancel.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_cancel.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_cancel.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\ic_action_cancel.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_reed_open.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/reed_open.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_fragment_help.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\fragment_help.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_refresh.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/ic_action_refresh.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_cloud_connected_tx.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\cloud_connected_tx.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_activity_fwupdate.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/activity_fwupdate.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag2motion_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag2motion_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_leftkey_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkey_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag_magnetometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag_magnetometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_accelerometer_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/accelerometer_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_colorpicker_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\colorpicker_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag2motion_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag2motion_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_humidity_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\humidity_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_barometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/barometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2cloudservice_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2cloudservice_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_fragment_scan.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/fragment_scan.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_cloud_connected_tx.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\cloud_connected_tx.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_oad_dialog.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/oad_dialog.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reedrelayoff_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\reedrelayoff_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_cancel.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ic_action_cancel.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_cancel.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\ic_action_cancel.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2rssi_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2rssi_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_humidity_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\humidity_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_fragment_pager.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/fragment_pager.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_element_characteristic.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/element_characteristic.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_about.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\ic_action_about.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_cancel.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/ic_action_cancel.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_leftkeyon_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\leftkeyon_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2gyroscope.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2gyroscope.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rightkey_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\rightkey_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2light.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2light.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_buttonsoffoff.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\buttonsoffoff.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_bluetooth.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_bluetooth.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cloud_connected_tx.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\cloud_connected_tx.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_frame_progress.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/frame_progress.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_frame_progress.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\frame_progress.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_bluetooth.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/bluetooth.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_activity_fwupdate.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\activity_fwupdate.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2barometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2barometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2gyroscope_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2gyroscope_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2irtemperature_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2irtemperature_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2irtemperature_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2irtemperature_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reed_open.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\reed_open.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2magnetometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2magnetometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_barometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\barometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_barometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/barometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_colorpicker.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\colorpicker.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_cloud_connected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/cloud_connected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_dialog_about.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\dialog_about.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_cloud_disconnected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_disconnected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_fragment_pager.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\fragment_pager.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2temperature_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2temperature_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_temperature_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\temperature_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2display.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2display.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_temperature.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\temperature.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_humidity_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/humidity_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag2oad_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag2oad_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_tible.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/tible.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\menu_device_activity_actions.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\menu\\device_activity_actions.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_cloud_connected_tx.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/cloud_connected_tx.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_about.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\ic_action_about.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_irtemperature_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\irtemperature_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rightkeyoff_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\rightkeyoff_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_accelerometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/accelerometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_unknown.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\unknown.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_lamp_control.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/lamp_control.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_temperature_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/temperature_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_deviceinfo_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\deviceinfo_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag_magnetometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag_magnetometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_temperature_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\temperature_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_gyroscope_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/gyroscope_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\xml_list_gradient.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\xml\\list_gradient.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_fw_selector.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/fw_selector.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_gyroscope_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\gyroscope_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2lightsensor.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2lightsensor.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2ccs_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2ccs_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag2display_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag2display_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_activity_file.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/activity_file.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_deviceinfo.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\deviceinfo.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2oad.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2oad.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2deviceinfo.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2deviceinfo.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2irtemperature.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2irtemperature.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2display.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2display.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2rssi.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2rssi.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_cancel.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\ic_action_cancel.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2display_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2display_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_accelerometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\accelerometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml_preferences.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/xml/preferences.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2motion_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2motion_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2simplekeys_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2simplekeys_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_buttonsonoff.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\buttonsonoff.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_cloud_config_dialog.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/cloud_config_dialog.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_cloud_disconnected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\cloud_disconnected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_about.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/ic_action_about.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_buttonsonon.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\buttonsonon.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_dialog_about.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/dialog_about.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_barometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\barometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bluetooth.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/ic_action_bluetooth.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2accelerometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2accelerometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2humidity_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2humidity_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_colorpicker_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\colorpicker_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_cloud_connected.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_connected.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_magnetometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\magnetometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_simplekeys_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/simplekeys_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rightkeyon_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\rightkeyon_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_deviceinfo_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/deviceinfo_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_bluetooth.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ic_action_bluetooth.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_colorpicker_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/colorpicker_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2light.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2light.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_buttonsonon.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/buttonsonon.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2simplekeys_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2simplekeys_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_simplekeys.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/simplekeys.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2motion.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2motion.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_buttonsoffoff.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/buttonsoffoff.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_deviceinfo_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\deviceinfo_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_settings.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/ic_action_settings.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\xml\\preferences.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_about.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_about.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_fragment_scan.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\fragment_scan.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_about.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/ic_action_about.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_oad_dialog.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\oad_dialog.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_unknown.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/unknown.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_list_item_normal.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\list_item_normal.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout_dialog_license.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/layout/dialog_license.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2lightsensor.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2lightsensor.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_cancel.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/ic_action_cancel.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_tible.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\tible.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_tible.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/tible.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2gyroscope_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2gyroscope_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_rightkeyon_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/rightkeyon_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_magnetometer_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\magnetometer_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_colorpicker_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/colorpicker_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2accelerometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2accelerometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_irtemperature.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/irtemperature.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_simplekeys_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\simplekeys_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_settings.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_settings.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_settings.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ic_action_settings.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_cloud_connected_tx.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/cloud_connected_tx.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_bluetooth.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\ic_action_bluetooth.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2accelerometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2accelerometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cloud_disconnected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\cloud_disconnected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_bluetooth.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/ic_action_bluetooth.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag2light_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag2light_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_magnetometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/magnetometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2gyroscope.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2gyroscope.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_rightkeyoff_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/rightkeyoff_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_sensortag2display_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\sensortag2display_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/menu_device_activity_actions.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/menu/device_activity_actions.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_st2.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\st2.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_simplekeys_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/simplekeys_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2barometer_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2barometer_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_refresh.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/ic_action_refresh.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2deviceinfo_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2deviceinfo_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_reed_closed.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/reed_closed.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2humidity.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2humidity.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2barometer.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2barometer.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_bluetooth.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\ic_action_bluetooth.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2temperature.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2temperature.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_refresh.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_refresh.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_buttonsoffon.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\buttonsoffon.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_deviceinfo.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/deviceinfo.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2magnetometer.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2magnetometer.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml_list_gradient.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/xml/list_gradient.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gyroscope.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\gyroscope.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_humidity.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/humidity.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag_simplekeys.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag_simplekeys.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2humidity.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2humidity.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2cloudservice.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2cloudservice.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_temperature_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/temperature_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sensortag2rssi.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\sensortag2rssi.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2motion_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2motion_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_cancel.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ic_action_cancel.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag2oad_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag2oad_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_settings.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\ic_action_settings.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_reedrelayoff_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/reedrelayoff_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_accelerometer_450.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\accelerometer_450.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_sensortag2ccs.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2ccs.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_cloud_disconnected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xxhdpi\\cloud_disconnected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-mdpi_buttonsonoff.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-mdpi/buttonsonoff.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\layout_fw_selector.xml.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\layout\\fw_selector.xml"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/menu_main_activity_actions.xml.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/menu/main_activity_actions.xml"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cloud_connected.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\cloud_connected.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_sensortag2light_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/sensortag2light_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_tible.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\tible.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2ccs_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2ccs_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_sensortag2rssi_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-xhdpi\\sensortag2rssi_300.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xhdpi_sensortag2accelerometer_300.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xhdpi/sensortag2accelerometer_300.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_tible.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\tible.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-xxhdpi_barometer_450.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-xxhdpi/barometer_450.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_about.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-mdpi\\ic_action_about.png"
     },
     {
-        "merged": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi_gyroscope.png.flat",
-        "source": "/media/user/H3D1P2/Test/Android/sensortag-20-android/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/gyroscope.png"
+        "merged": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_leftkeyoff_300.png.flat",
+        "source": "D:\\Personal\\projects\\AndroidStudio\\sensortag-20-android\\sensortag20\\BleSensorTag\\src\\main\\res\\drawable-hdpi\\leftkeyoff_300.png"
     }
 ]

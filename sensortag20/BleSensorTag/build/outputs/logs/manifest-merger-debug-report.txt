@@ -13,7 +13,7 @@ INJECTED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag2
 		INJECTED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml
 		INJECTED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml:5:5-30
+		ADDED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml:5:5-56
 		INJECTED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml
 		INJECTED from D:\Personal\projects\AndroidStudio\sensortag-20-android\sensortag20\BleSensorTag\src\main\AndroidManifest.xml
 	xmlns:android

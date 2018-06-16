@@ -1,5 +1,7 @@
 # sensortag-20-android
 
+source:  https://git.ti.com/sensortag-20-android
+
 THIS IS SENSORTAG CODE THAT 
 1. WORKS ON ANDROID 8.x (UP TO 8.1 SO FAR)
 2. FIXES THE HANGUP WHEN SCANNING NON-EXISTENT BLE SENSOR

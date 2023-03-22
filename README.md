@@ -1,4 +1,4 @@
-# sensortag-20-android
+# sensortag-20-android for Android 8
 
 source:  https://git.ti.com/sensortag-20-android
 
